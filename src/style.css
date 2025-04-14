@@ -33,7 +33,7 @@ canvas{
   width: 100vw;
   height: 100vh;
   /* 3d 画布往上移动一部分 */
-  transform: translateY(-100px);   
+  /* transform: translateY(-100px);    */
 }
 button {
   /* 清除默认button 的背景、边框、阴影 */
@@ -158,8 +158,8 @@ button {
 }
 .banner_f{
   position: fixed;
-  top: 40px;
-  left: 45%;
+  top: 80px;
+  left: 48%;
   transform: translateX(-50%);
   z-index: 5;
   display: flex;

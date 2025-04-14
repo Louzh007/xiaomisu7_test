@@ -573,7 +573,7 @@ window.addEventListener('click', function (event) {
     
     //把鼠标点击的屏幕位置转换为标准化坐标（-1 到 1 的坐标）
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -((event.clientY + 100) / window.innerHeight) * 2 + 1;     // 这里的+100是因为我在style中给画布canvas做了向上偏移100px的偏移
+    mouse.y = -((event.clientY + 0) / window.innerHeight) * 2 + 1;     // 这里的+100是因为我在style中给画布canvas做了向上偏移100px的偏移
   
     //设置射线的起点和方向
     raycaster.setFromCamera(mouse, camera);
@@ -703,7 +703,7 @@ const tipClose = document.getElementById('doorTipClose');
 function updateDoorHover(event) {
     // 更新鼠标位置，这里 Y+100是因为在 css 中整个场景向上偏移了 100px
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -((event.clientY + 100) / window.innerHeight) * 2 + 1;
+    mouse.y = -((event.clientY + 0) / window.innerHeight) * 2 + 1;
     
     // 执行射线检测
     raycaster.setFromCamera(mouse, camera);
@@ -913,7 +913,7 @@ const hdrcontrols = {
     environmentIntensity: 1.2  // 初始强度值
 };
 //加载hdr贴图
-hdrLoader.load('./brown_photostudio_02_4k.hdr', function (envmap) {
+hdrLoader.load('./Zbyg-Studio_0022_4k.hdr', function (envmap) {
   //设置贴图映射类型,球形贴图
   envmap.mapping = THREE.EquirectangularReflectionMapping;   
 
