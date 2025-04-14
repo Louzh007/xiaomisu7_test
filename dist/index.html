@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xiaomisu7 test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script type="module" crossorigin src="/xiaomisu7_test/assets/index-C_UrdQSP.js"></script>
+    <link rel="stylesheet" crossorigin href="/xiaomisu7_test/assets/index-DodIu4Nh.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- 引入main.js文件 -->  
+    <!-- 左上角的logo -->
+     <div class="logo">
+      <img  src="./image/xiaomiqiche.png" alt="">
+     </div>
+    <!-- 添加WASD 控制按钮 -->
+    <ul id="Control_f">
+      <li class="Control_s">
+        <button class="Direction_Control" id="W_Control">W</button>
+      </li>
+      <li class="Control_s">
+        <button class="Direction_Control" id="A_Control">A</button>
+        <button class="Direction_Control" id="S_Control">S</button>
+        <button class="Direction_Control" id="D_Control">D</button>
+      </li>
+    </ul> 
+    <!-- 鼠标移动到车门的时候，出现开门提示 -->
+     <div id="doorTipOpen" class="door-tip">打开车门</div>
+     <div id="doorTipClose" class="door-tip">关闭车门</div>
+     <!-- 摄像机三个状态切换 -->
+     <ul class="Camera_Control_f">
+      <li>
+        <div class="Camera_Control" id="Camera_Control">
+          优雅前脸
+        </div>
+      </li>
+      <li>
+        <div class="Camera_Control" id="Camera_Control">
+          流畅侧面
+        </div>
+      </li>
+      <li>
+        <div class="Camera_Control" id="Camera_Control">
+          饱满尾部
+        </div>
+      </li>
+     </ul>
+     <!-- 车后面三个 banner 切换 -->
+      <ul class="banner_f">
+        <li>
+          <div class="banner_s" id="banner_s">
+            <img  src="./image/youya.png" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="banner_s" id="banner_s">
+            <img  src="./image/4997mm.png" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="banner_s" id="banner_s">
+            <img  src="./image/liangyan.png" alt="">
+          </div>
+        </li>
+      </ul>
+      <img id="left_light_img" src="./image/left_light.png" alt="">
+      <img id="right_light_img" src="./image/right_light.png" alt="">
+      <div id="speedanimation">
+        <div id="speedanimation1"></div>
+        <div id="speedanimation2"></div>
+      </div>
+      <ul class="colorselect_f">
+        <li class="colorselect_s" data-color="#1A95B2">      <!-- date是h5的自定义属性，方便在js中读取切换车漆颜色 -->
+          <div id="colorselect_1"></div>
+        </li>
+        <li class="colorselect_s" data-color="#B3B3B3">
+          <div id="colorselect_2"></div>
+        </li>
+        <li class="colorselect_s" data-color="#7D6A87">
+          <div id="colorselect_3"></div>
+        </li>
+        <li class="colorselect_s" data-color="#E15E00">
+          <div id="colorselect_4"></div>
+        </li>
+        <li class="colorselect_s" data-color="#B62551">
+          <div id="colorselect_5"></div>
+        </li>
+      </ul>
+
+  </body>
+</html>
