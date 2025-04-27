@@ -5,8 +5,8 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xiaomisu7 test</title>
-    <script type="module" crossorigin src="/xiaomisu7_test/assets/index-BcZJ3G9j.js"></script>
-    <link rel="stylesheet" crossorigin href="/xiaomisu7_test/assets/index-B8pZ719N.css">
+    <script type="module" crossorigin src="/xiaomisu7_test/assets/index-BPSEu6Zb.js"></script>
+    <link rel="stylesheet" crossorigin href="/xiaomisu7_test/assets/index-KjFgq_IK.css">
   </head>
   <body>
     <div id="app"></div>
@@ -30,7 +30,8 @@
      <div id="doorTipOpen" class="door-tip">打开车门</div>
      <div id="doorTipClose" class="door-tip">关闭车门</div>
      <!-- 摄像机三个状态切换 -->
-     <ul class="Camera_Control_f">
+     <!--su7的三个状态切换 -->
+     <ul class="Camera_Control_f active" data-model="xiaomi su7-action3">
       <li>
         <div class="Camera_Control" id="Camera_Control">
           优雅前脸
@@ -47,32 +48,82 @@
         </div>
       </li>
      </ul>
+     <!--su7U的三个状态切换 -->
+     <ul class="Camera_Control_f" data-model="su7U2">
+      <li>
+        <div class="Camera_Control" id="Camera_Control">
+          U型风刀大前铲
+        </div>
+      </li>
+      <li>
+        <div class="Camera_Control" id="Camera_Control">
+          运动与豪华新定义
+        </div>
+      </li>
+      <li>
+        <div class="Camera_Control" id="Camera_Control">
+          碳纤维固定大尾翼
+        </div>
+      </li>
+     </ul>
      <!-- 车后面三个 banner 切换 -->
       <ul class="banner_f">
         <li>
-          <div class="banner_s" id="banner_s">
+          <div class="banner_s">
             <img  src="./image/youya.png" alt="">
           </div>
         </li>
         <li>
-          <div class="banner_s" id="banner_s">
+          <div class="banner_s">
             <img  src="./image/4997mm.png" alt="">
           </div>
         </li>
         <li>
-          <div class="banner_s" id="banner_s">
+          <div class="banner_s">
             <img  src="./image/liangyan.png" alt="">
           </div>
         </li>
+        <li>
+          <div class="banner_s">
+          </div>
+        </li>
+        <li>
+          <div class="banner_s">
+          </div>
+        </li>
+        <li>
+          <div class="banner_s">
+          </div>
+        </li>
       </ul>
+      <!-- 左右两个加速纹理 -->
       <img id="left_light_img" src="./image/left_light.png" alt="">
       <img id="right_light_img" src="./image/right_light.png" alt="">
+      <!-- 左右两个加速纹理 -->
+      <img id="left_light_u_img" src="./image/left_light_u.png" alt="">
+      <img id="right_light_u_img" src="./image/right_light_u.png" alt="">
+      <!-- 码表动图 -->
       <div id="speedanimation">
         <div id="speedanimation1"></div>
         <div id="speedanimation2"></div>
       </div>
-      <ul class="colorselect_f">
-        <li class="colorselect_s" data-color="#1A95B2">      <!-- date是h5的自定义属性，方便在js中读取切换车漆颜色 -->
+
+      <!-- 车模型选择按钮 -->
+       <ul class="modelselect_f">
+        <li class="modelselect_s active" data-model="xiaomi su7-action3">
+          <div class="modelselect_su7">
+          </div>
+        </li>
+        <!-- 初始激活下面这个div -->
+        <li class="modelselect_s" data-model="su7U2">
+          <div class="modelselect_su7U">
+          </div>
+        </li>
+       </ul>
+      <!-- 车漆颜色选择 -->
+      <!-- xiaomi su7颜色选择 -->
+      <ul class="colorselect_f active"  data-model="xiaomi su7-action3">
+        <li class="colorselect_s" data-color="#1898A7">      <!-- date是h5的自定义属性，方便在js中读取切换车漆颜色  1A95B2 -->
           <div id="colorselect_1"></div>
         </li>
         <li class="colorselect_s" data-color="#B3B3B3">
@@ -81,13 +132,32 @@
         <li class="colorselect_s" data-color="#7D6A87">
           <div id="colorselect_3"></div>
         </li>
-        <li class="colorselect_s" data-color="#E15E00">
+        <li class="colorselect_s" data-color="#848F7F">
           <div id="colorselect_4"></div>
         </li>
         <li class="colorselect_s" data-color="#B62551">
           <div id="colorselect_5"></div>
         </li>
       </ul>
+      <!-- su7U2颜色选择 -->
+      <ul class="colorselect_f"  data-model="su7U2">
+        <li class="colorselect_s" data-color="#FFC60F">      <!-- date是h5的自定义属性，方便在js中读取切换车漆颜色 -->
+          <div id="colorselect_6"></div>
+        </li>
+        <li class="colorselect_s" data-color="#B3B3B3">
+          <div id="colorselect_7"></div>
+        </li>
+        <li class="colorselect_s" data-color="#111111">
+          <div id="colorselect_8"></div>
+        </li>
+        <li class="colorselect_s" data-color="#0C7F7F">
+          <div id="colorselect_9"></div>
+        </li>
+        <li class="colorselect_s" data-color="#FFFFFF">
+          <div id="colorselect_10"></div>
+        </li>
+      </ul>
+
 
   </body>
 </html>
