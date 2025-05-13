@@ -5,8 +5,9 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xiaomisu7 test</title>
-    <script type="module" crossorigin src="/xiaomisu7_test/assets/index-BPSEu6Zb.js"></script>
-    <link rel="stylesheet" crossorigin href="/xiaomisu7_test/assets/index-KjFgq_IK.css">
+    <link rel="icon" href="/xiaomisu7_test/image/favicon.png">
+    <script type="module" crossorigin src="/xiaomisu7_test/assets/index-C0fgYpAQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/xiaomisu7_test/assets/index-Coj99pOH.css">
   </head>
   <body>
     <div id="app"></div>
@@ -33,17 +34,17 @@
      <!--su7的三个状态切换 -->
      <ul class="Camera_Control_f active" data-model="xiaomi su7-action3">
       <li>
-        <div class="Camera_Control" id="Camera_Control">
+        <div class="Camera_Control" >
           优雅前脸
         </div>
       </li>
       <li>
-        <div class="Camera_Control" id="Camera_Control">
+        <div class="Camera_Control" >
           流畅侧面
         </div>
       </li>
       <li>
-        <div class="Camera_Control" id="Camera_Control">
+        <div class="Camera_Control" >
           饱满尾部
         </div>
       </li>
@@ -51,17 +52,17 @@
      <!--su7U的三个状态切换 -->
      <ul class="Camera_Control_f" data-model="su7U2">
       <li>
-        <div class="Camera_Control" id="Camera_Control">
+        <div class="Camera_Control">
           U型风刀大前铲
         </div>
       </li>
       <li>
-        <div class="Camera_Control" id="Camera_Control">
+        <div class="Camera_Control">
           运动与豪华新定义
         </div>
       </li>
       <li>
-        <div class="Camera_Control" id="Camera_Control">
+        <div class="Camera_Control">
           碳纤维固定大尾翼
         </div>
       </li>
@@ -157,6 +158,27 @@
           <div id="colorselect_10"></div>
         </li>
       </ul>
+    <!-- 转场动画 -->
+    <div id="guochang-video" class="guochang-video">
+      <video preload="auto" id="video-su7" class="fullscreen-video">
+        <source src="./image/流光彩虹.mp4" type="video/mp4">
+      </video>
+      <video preload="auto" id="video-ultra" class="fullscreen-video">
+        <source src="./image/su7 转场动画 4k.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- 加载动画 -->
+     <div id="loading_bg">
+       <div id="loading_f">
+         <div id="loading_png">
+         </div>
+       </div>
+       <!-- 在loading容器中添加进度条 -->
+       <div id="loading_progress">
+         <div class="progress_bar"></div>
+        </div>
+      </div>
 
 
   </body>
